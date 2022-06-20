@@ -21,3 +21,19 @@ resource "oci_core_vcn" "test_vcn" {
     display_name = "vcn-appdev-ws"
     
 }
+
+# General OCI parameters
+variable "compartment_id" {
+  description = "The compartment id where to create all resources."
+  type        = string
+}
+
+variable "vcn_cidrs" {
+  default     = ["10.0.0.0/16"]
+  description = "The list of IPv4 CIDR blocks the VCN will use."
+  type        = list(string)
+}
+
+variable "display_name" {
+type        = string
+}
