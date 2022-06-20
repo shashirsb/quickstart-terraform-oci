@@ -14,7 +14,7 @@ module "vcn" {
 
 resource "oci_core_vcn" "test_vcn" {
     #Required
-    compartment_id = var.compartment_id
+    compartment_id = "ocid1.compartment.oc1..aaaaaaaah6ibn4qjy6chh7ilzha53oeeacmrmghdh5ziqhzn2xtgubhxolga"
 
    
     cidr_block = "11.0.0.0/16"
