@@ -12,17 +12,15 @@ module "vcn" {
 }
 
 
-resource "oci_core_vcn" "test_vcn" {
+/* resource "oci_core_vcn" "test_vcn" {
     #Required
-    compartment_id = "ocid1.compartment.oc1..aaaaaaaah6ibn4qjy6chh7ilzha53oeeacmrmghdh5ziqhzn2xtgubhxolga"
-
-   
+    compartment_id = "ocid1.compartment.oc1..aaaaaaaah6ibn4qjy6chh7ilzha53oeeacmrmghdh5ziqhzn2xtgubhxolga"   
     cidr_block = "11.0.0.0/16"
     display_name = "vcn-appdev-ws"
     
-}
+} */
 
-# General OCI parameters
+/* # General OCI parameters
 variable "compartment_id" {
   description = "The compartment id where to create all resources."
   type        = string
@@ -36,4 +34,4 @@ variable "vcn_cidrs" {
 
 variable "display_name" {
 type        = string
-}
+} */
